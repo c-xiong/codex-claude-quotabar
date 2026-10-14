@@ -52,7 +52,7 @@ tar xzf "$tmp/$asset" -C "$APP_DIR/backend"
 mv "$tmp/quotabar.py" "$APP_DIR/quotabar.py"
 cat > "$BIN_DIR/quotabar" <<EOF
 #!/bin/sh
-exec "$PYTHON" "$APP_DIR/quotabar.py" "\$@"
+exec python3 "$APP_DIR/quotabar.py" "\$@"
 EOF
 chmod +x "$BIN_DIR/quotabar"
 
